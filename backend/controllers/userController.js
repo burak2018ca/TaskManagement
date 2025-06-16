@@ -56,26 +56,34 @@ const loginUser = asyncHandler( async(req, res) => {
     const user = await User.findOne({email})
     
     if(user && await(bcrypt.compare(password, user.password))){
+
         res.json({
             _id: user.id,
             name: user.name,
             email:user.email,
-            token: generateToken(user._id)
+            token: generateToken(user._id),
         })
+        console.log(`${user.name} logged in `)
     }
     else{
         res.status(400)
         throw new Error('Invalid login info')
     }
+    
 })
 
 
 
 // @desc Get User Data
 // @route GET /api/users/me
-// @access Public
+// @access Private
 const getMe = asyncHandler( async(req, res) => {
-    res.json({message: 'User data display'})
+    const {_id, name, email } = await User.findById(req.user.id)
+    res.status(200).json({
+        id: _id,
+        name,
+        email
+    })
 })
 
 
