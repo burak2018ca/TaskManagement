@@ -10,7 +10,6 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-    
   },
   "author": "Burak Yildirim",
   "license": "ISC",
@@ -27,5 +26,9 @@
     "@types/node": "^24.0.3",
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
   }
 }
