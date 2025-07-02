@@ -33,7 +33,7 @@ This project showcases end-to-end development using the **MERN stack**, and refl
 - JWT-based login and registration  
 - Secure, isolated access to goals per user  
 - "Show Password" toggle for better UX  
-![Login](./GIFS/Login.gif)
+![Login](./Documentation/GIFS/Login.gif)
 
 ---
 
@@ -42,14 +42,14 @@ This project showcases end-to-end development using the **MERN stack**, and refl
 - Instantly delete goals with responsive UI  
 - Live updates without page refresh  
 ![Add Goal](./GIFS/AddNewGoal.gif)  
-![Delete Goal](./GIFS/DeleteGoal.gif)
+![Delete Goal](./Documentation/GIFS/DeleteGoal.gif)
 
 ---
 
 ### 👤 Multi-user Support
 - Every user sees only their own goals  
 - Switching users gives a fresh, isolated workspace  
-![New User Login](./GIFS/NewUserlogin.gif)
+![New User Login](./Documentation/GIFS/NewUserlogin.gif)
 
 ---
 
@@ -57,21 +57,21 @@ This project showcases end-to-end development using the **MERN stack**, and refl
 - Fully functional new user sign-up  
 - Clean transition from register to login  
 - Seamless experience  
-![Register and Create Goal](./GIFS/RegisterNewUserandcreateaGoal.gif)
+![Register and Create Goal](./Documentation/GIFS/RegisterNewUserandcreateaGoal.gif)
 
 ---
 
 ### 🔁 Logout Functionality
 - One-click logout  
 - Clears token/localStorage  
-![Logout](./GIFS/logout.gif)
+![Logout](./Documentation/GIFS/logout.gif)
 
 ---
 
 ### ❌ Login Error Handling (Planned UI enhancement)
 - Currently, login failure lacks error feedback  
 - This will be improved with toast notifications  
-![Failed Login](./GIFS/FailedLogin.gif)
+![Failed Login](./Documentation/GIFS/FailedLogin.gif)
 
 ---
 
@@ -99,31 +99,6 @@ Hiring managers should note:
 | 🎨 Animation on add/delete cards | 🧠 In Review |
 | 🧼 Demo user account with reset DB on logout | 🔒 To be added |
 | 🛠️ Admin view (optional future extension) | 🧠 Conceptual |
-
----
-
-## ✅ How to Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/burak2018ca/TaskAPP.git
-cd TaskAPP
-
-# Install client dependencies
-cd frontend
-npm install
-
-# Install server dependencies
-cd ../backend
-npm install
-
-# Set up .env file (sample below)
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-
-# Run both client and server (example)
-npm run dev  # Or separate client/server scripts
-```
 
 ---
 
