@@ -11,8 +11,10 @@ const Login = () => {
         email: '',
         password: '',
     })
+    
 
     const {email, password} = formData
+    const [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -40,6 +42,7 @@ const Login = () => {
         }))
     }
 
+
     const onSubmit = (e) =>{
         e.preventDefault()
 
@@ -60,6 +63,7 @@ const Login = () => {
 
         <section className='form'>
             <form onSubmit={onSubmit}> 
+
                 <div className="form-group">
                     <input 
                     type="text" 
@@ -70,9 +74,10 @@ const Login = () => {
                     placeholder='Enter Your Email' 
                     onChange={onChange}/>
                 </div>
+
                 <div className="form-group">
                     <input 
-                    type="text" 
+                    type= {showPassword ? 'text' : 'password'}
                     className="form-control" 
                     id='password' 
                     name='password' 
@@ -80,6 +85,25 @@ const Login = () => {
                     placeholder='Enter Your Password' 
                     onChange={onChange}/>
                 </div> 
+
+                <div className="mt-4 flex items-center justify-start">
+                    <div className="flex items-center gap-2">
+                        <label
+                        htmlFor="showPassword"
+                        className="text-sm font-medium cursor-pointer m-0 inline-block"
+                        >
+                        Show Password
+                        </label>
+                        <input
+                        type="checkbox"
+                        id="showPassword"
+                        checked={showPassword}
+                        onChange={() => setShowPassword(!showPassword)}
+                        className="w-4 h-4 cursor-pointer"
+                        />
+                    </div>
+                </div>
+
                 <div className="div-form-group">
                     <button type='submit' className='btn btn-block'>Submit</button>
                 </div>
