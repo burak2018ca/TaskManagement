@@ -93,13 +93,34 @@ This demo account already contains preloaded goals. Use it to explore the app in
 
 ## 📚 What This Project Demonstrates
 
-Hiring managers should note:
-- **Full authentication flow (JWT)** from backend to frontend
-- **Redux Toolkit** integration for state management
-- **MongoDB schema design** for scalable goal tracking
-- RESTful **API integration** and **async handling**
-- **Reusable components** and clean Tailwind CSS styling
-- Focus on **user experience** and **responsive interactivity**
+This project was built to reflect know and do in real-world jobs. It demonstrates hands-on proficiency in:
+
+### 🔧 Frontend Engineering
+- **React functional components** with hooks like `useEffect`, `useState`, and `useSelector`
+- **Redux Toolkit** for scalable and maintainable global state management
+- **Axios Toolkit** integration for clean and reusable API communication
+- **Tailwind CSS** for fast and consistent styling with a responsive UI design
+- UI decisions informed by UX principles — like live feedback, clear actions, and clean layout
+
+### 🛠 Backend Engineering
+- **Express.js** for routing and middleware structure
+- **MongoDB + Mongoose** for modeling relational-style data in a NoSQL environment
+- **JWT authentication** flow implemented securely across client and server
+- **REST API design** for user and goal resource operations
+
+### 🔐 Authentication & Access Control
+- Full **user authentication system** (register, login, logout) using JWT
+- **Secure user data isolation** — goals are scoped per user
+- Sensitive routes are protected via custom **auth middleware**
+
+### 🧪 Testing & Debugging Focus
+- Designed to make debugging easy with clear API structure and modular logic
+- Backend logs and client-side feedback allow smooth iteration during testing
+
+### 💡 Project Thinking
+- Clear **user journey**: register or login → create goals → manage/delete them → logout
+- Clean separation of concerns between frontend logic, API services, and backend routing
+- Built with readability, clarity, and recruiter-accessibility in mind
 
 ---
 
@@ -121,6 +142,7 @@ Hiring managers should note:
 ## 🧠 Lessons Learned
 
 - Working with **Redux Toolkit** taught clean, scalable state handling.
+- Using **Axios Toolkit** improved API abstraction and reduced boilerplate in HTTP calls.
 - Handling **JWT-based auth** across multiple users helped sharpen backend + frontend sync.
 - Practiced best practices with **async/await**, error handling, and **component modularity**.
 - Improved understanding of **user flow logic**, localStorage/session behavior, and UX-driven dev.
