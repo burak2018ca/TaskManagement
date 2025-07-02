@@ -27,6 +27,22 @@ This project showcases end-to-end development using the **MERN stack**, and refl
 
 ---
 
+## 🧪 How to Test the App
+
+You can test the application in two ways:
+
+### 🧍 Option 1: Use Demo Login Credentials
+- **Email:** `test@email.com`
+- **Password:** `123`
+
+This demo account already contains preloaded goals. Use it to explore the app instantly without creating a new user.
+
+### ✍️ Option 2: Register Your Own Account
+- Enter any name, fake email (e.g., `yourname@demo.com`), and a password 
+- After signing up, you can log in and start adding goals. Each user has isolated data.
+
+---
+
 ## ✨ Key Features
 
 ### 🔐 Authentication
