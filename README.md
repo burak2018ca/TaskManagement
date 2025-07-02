@@ -115,4 +115,4 @@ Hiring managers should note:
 
 If you’re a recruiter, I’d love to hear your thoughts!  
 🔗 [LinkedIn – Burak Yildirim](https://www.linkedin.com/in/burak-yildirim-ca/)  
-📧 burak.dev@example.com (replace with real email if public)
+📧 burak2018ca@hotmail.com
